@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./lib",
+    "lib": ["es2015", "dom"],
+    "strict": true,
+    "esModuleInterop": true,
+    "types": [
+      "babylonjs",
+      "babylonjs-materials"
+    ]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/__tests__/*"]
+}
