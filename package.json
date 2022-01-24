@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@babylonjs/core": "^4.2.0",
-    "@zappar/zappar-babylonjs": "^0.3.29",
+    "@zappar/zappar-babylonjs": "^0.4.0-beta.5",
     "babylonjs": "^4.2.0",
     "babylonjs-loaders": "^4.2.0",
     "babylonjs-materials": "^4.2.0"
