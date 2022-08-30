@@ -3,9 +3,11 @@
 import * as BABYLON from 'babylonjs';
 import * as ZapparBabylon from '@zappar/zappar-babylonjs';
 import * as MATERIALS from 'babylonjs-materials';
-import model from '../assets/mug.glb';
+
+const model = new URL('../assets/mug.glb', import.meta.url).href;
+
 import 'babylonjs-loaders';
-import './index.sass';
+import './index.css';
 // Model from https://sketchfab.com/3d-models/wizardy-ghost-91f9df6880f8492cb222d91b9fbd1434
 
 // The SDK is supported on many different browsers, but there are some that
@@ -69,6 +71,7 @@ const shadowGenerator = new BABYLON.ShadowGenerator(1024, light);
 shadowGenerator.useBlurExponentialShadowMap = true;
 shadowGenerator.blurScale = 2;
 shadowGenerator.setDarkness(0.2);
+
 
 BABYLON.SceneLoader.ImportMesh(null, '', model, scene, (meshes) => {
   [mesh] = meshes;
